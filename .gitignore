@@ -1,0 +1,19 @@
+# Ignorar arquivos de log
+*.log
+logs/
+
+# Ignorar arquivos do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignorar arquivos de banco de dados SQLite
+*.sqlite3
+
+# Ignorar arquivos de ambiente virtual (caso usevenv)
+venv/
+.env
+
+# Ignorar arquivos temporários do sistema operacional
+.DS_Store
+Thumbs.db
