@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  vm1:
+    build: ./vm1
+    ports:
+      - "8000:8000"
+    networks:
+      - minha_rede
+
+  vm2:
+    build: ./vm2
+    ports:
+      - "8001:8001"
+    networks:
+      - minha_rede
+
+  vm3:
+    build: ./vm3
+    ports:
+      - "8002:8002"
+    networks:
+      - minha_rede
+
+networks:
+  minha_rede:
+    driver: bridge
